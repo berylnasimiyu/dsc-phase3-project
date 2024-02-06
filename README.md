@@ -1,4 +1,4 @@
-# Tanzanian Water Wells: Predictive Maintenance for Tanzanian Water Wells¶
+# Predictive Maintenance for Tanzanian Water Wells¶
 ## Project Overview
 In Tanzania, ensuring widespread access to clean water remains a significant challenge. The country's existing water wells, vital for providing this essential resource, often face issues ranging from disrepair to complete failure. To address this pressing concern, our project focuses on developing a predictive maintenance model that classifies water wells as either functional or in need of attention.
 
