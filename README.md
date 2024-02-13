@@ -1,6 +1,6 @@
 # Water Wells Classification Project
 
-![Water Well]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg
+![Water Well](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg)
 
 Group 15 DSF-PT05
 Members
@@ -55,14 +55,14 @@ The analysis explores the relationship between well age and functionality.
 
 Three models were employed: XGBoost, LinearSVC, and RandomForest. XGBoost demonstrated the highest accuracy and precision, making it the chosen model.
 
-![logistic regression]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/logistics_con.jpg
+![logistic regression](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/logistics_con.jpg)
 
-![svm]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/svm_con.jpg
+![svm](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/svm_con.jpg)
 
 **Evaluation:**
 
 XGBoost emerged as the best-performing model, providing high accuracy and precision values.
-![best model]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg
+![best model](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg)
 
 **Findings:**
 
