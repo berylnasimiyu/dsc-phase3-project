@@ -1,7 +1,7 @@
 # Water Wells Classification Project
 Group 15 DSF-PT05
 Members
-1. Sophie Hare-Lead
+1. Sophie Hare - Group Lead
 2. James Kibunja
 4. Beryl Wafula
 5. John Nkakuyia
