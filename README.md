@@ -1,65 +1,75 @@
-<<<<<<< HEAD
 # Water Wells Classification Project
-
 Group 15 DSF-PT05
 Members
-1.Sophie Hare-Lead
-2.James Kibunja
-4.Beryl Wafula
-5.John Nkakuyia
-6.Daniel Murithi
+1. Sophie Hare - Group Lead
+2. James Kibunja
+4. Beryl Wafula
+5. John Nkakuyia
+6. Daniel Murithi
+
+![Water Well](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg)
 
 ## Project Overview
-This project aims to address a classification problem related to water wells in Tanzania. The goal is to predict the condition of water wells, categorizing them as functional, non-functional, or in need of repair. The analysis and models developed in this project will assist stakeholders, such as NGOs or the Government of Tanzania, in identifying wells that require attention and maintenance.
+Tanzania is the largest country in East Africa with a population of approximately 59 million. However, the country faces challenges in providing clean water to its large population and about 47% of the population lacks access to clean drinking water. Many existing water points need repairs or have failed. The purpose of the project is to build a classifier for two potential audiences;
+ -The Government of Tanzania might be interested in identifying patterns in non-functional wells and understanding  factors influencing their failure. This knowledge can be used to improve how new wells are built to ensure their longevity and functionality.
+ -Identifying non-functional and in-need-of-repair wells to optimize resource allocation and maximize their impact in providing clean water access.
 
-## Business and Data Understanding
-### Stakeholder Audience:
-The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well maintenance efforts and allocate resources effectively.
-
-### Dataset Choice:
-The dataset used for this analysis is a combination of two files: d.3.csv and d.1.csv. It contains various features related to water wells, such as pump type, installation date, and other relevant information. The dataset was chosen to address the specific needs of predicting well conditions.
-
-### Target Variable:
-status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair."
-
-**Overview:**
-
-Tanzania, the largest country in East Africa with a population of approximately 59 million, grapples with challenges in providing clean water to its citizens. Approximately 47% of the population lacks access to clean drinking water, and many existing water points require repairs or have failed. The project's primary objective is to build a classifier for two key audiences:
-
-1. **Government of Tanzania:**
-   - Identify patterns in non-functional wells.
-   - Understand factors influencing well failure to improve the construction of new wells.
-   - Enhance the longevity and functionality of wells.
-
-2. **Resource Allocation Optimization:**
-   - Identify non-functional and in-need-of-repair wells to optimize resource allocation.
-   - Maximize impact in providing clean water access.
 
 **Objective:**
 
 Tanzania faces water provision challenges due to issues with existing water points, with some wells needing repairs or failing entirely. The analysis aims to:
 - Understand factors affecting well functionality (e.g., water source, well age, and the impact of public meetings).
-- Determine the best payment mode for well maintenance.
+- Determine the best payment mode for well-maintenance.
 - Utilize classification methods to identify effective strategies for improving well functionality. 
 
-This analysis supports the Government Ministry of Water and NGOs in their efforts to ensure clean water access for Tanzanian communities.
+### Stakeholder Audience:
+The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
+
+### Dataset
+##### Features:
+The features in the dataset include, but may not be limited to:
+
+id: Unique identifier for each water pump.
+
+amount_tsh: Total static head (amount of water available to waterpoint).
+
+funder: Organization or individual that funded the well.
+
+installer: Organization or person that installed the well.
+
+longitude, latitude: Geographic coordinates of the well.
+
+basin: Geographic water basin.
+
+region: Geographic location.
+
+population: Population around the well.
+
+### Target Variable:
+status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair.
 
 **Data Understanding:**
 
 Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
 
-
 **Age vs Functionality:**
 
 The analysis explores the relationship between well age and functionality.
+
+![Age vs functionality](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/age_wel.jpg)
 
 **Modeling:**
 
 Three models were employed: XGBoost, LinearSVC, and RandomForest. XGBoost demonstrated the highest accuracy and precision, making it the chosen model.
 
+![logistic regression](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/logistics_con.jpg)
+
+![svm](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/svm_con.jpg)
+
 **Evaluation:**
 
 XGBoost emerged as the best-performing model, providing high accuracy and precision values.
+![best model](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg)
 
 **Findings:**
 
@@ -102,46 +112,3 @@ XGBoost emerged as the best-performing model, providing high accuracy and precis
   - Investigate missing or zero values in Population and GPS.
   - Explore binning highly cardinal columns for enhanced model performance.
   - Examine and address wells with static head values of 0.
-=======
-# Predictive Maintenance for Tanzanian Water Wells¶
-## Project Overview
-In Tanzania, ensuring widespread access to clean water remains a significant challenge. The country's existing water wells, vital for providing this essential resource, often face issues ranging from disrepair to complete failure. To address this pressing concern, our project focuses on developing a predictive maintenance model that classifies water wells as either functional or in need of attention.
-
-### Stakeholders:
-Our primary stakeholders include NGOs dedicated to water access initiatives and the Government of Tanzania. These entities can benefit significantly from a predictive model that informs them about the status of existing water wells, guiding strategic decision-making and ensuring the sustainability of clean water supply.
-
-### Problem Statement:
-The scarcity of clean water in Tanzania demands a proactive approach to manage and maintain water wells efficiently. Non-Governmental Organizations (NGOs) and the Government of Tanzania are confronted with the task of identifying wells that require urgent repair or replacement. Our predictive maintenance model aims to be the solution by predicting the condition of water wells, thereby optimizing resource allocation for maintenance and construction efforts.
-
-### Objective:
-The overarching goal of this project is to develop a binary classification model capable of predicting whether a water well is functional or in need of attention. By achieving this, we aim to assist stakeholders in making data-driven decisions to allocate resources effectively, prioritizing maintenance efforts where they are most urgently required.
-
-### Dataset Description: Pump it Up - Water Pump Functionality Prediction
-#### Overview:
-This dataset, sourced from the "Pump it Up: Data Mining the Water Table" competition on Kaggle, focuses on predicting the functionality of water pumps in Tanzania. The dataset comprises three CSV files: train.csv, train-labels.csv, and test.csv.
-
-#### Files:
-train.csv: Contains information about the training set, including features related to water pumps in Tanzania.
-train-labels.csv: Provides labels corresponding to the training set, indicating the functionality status of each water pump.
-test.csv: Represents the test set for which predictions need to be made.
-##### Features:
-The features in the dataset include, but may not be limited to:
-
-id: Unique identifier for each water pump.
-amount_tsh: Total static head (amount of water available to waterpoint).
-funder: Organization or individual that funded the well.
-installer: Organization or person that installed the well.
-longitude, latitude: Geographic coordinates of the well.
-basin: Geographic water basin.
-region: Geographic location.
-population: Population around the well.
-#### Target Variable:
-status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair."
-#### Use Case:
-This dataset is particularly relevant for NGOs and government agencies involved in water resource management. The predictive model aims to optimize resource allocation for well maintenance and construction, ensuring sustainable access to clean water.
-
-#### Ethical Considerations:
-Given the nature of the project, ethical considerations should be emphasized. Transparent and responsible use of the model is crucial to avoid potential negative impacts on communities.
-
-This dataset offers a rich source of information for developing a predictive maintenance model for water wells, aligning with the broader objective of enhancing water access in Tanzania.
->>>>>>> a3423dd9d733fe54f9468dea9cb25c79c8d7e0f0
