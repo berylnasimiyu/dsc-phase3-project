@@ -1,5 +1,7 @@
 # Water Wells Classification Project
 
+![Water Well]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg
+
 Group 15 DSF-PT05
 Members
 1. Sophie Hare-Lead
@@ -23,7 +25,8 @@ This analysis supports the Government Ministry of Water and NGOs in their effort
 **Data Understanding:**
 
 Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
-!images/age_wel.jpg
+
+![Age vs functionality](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/age_wel.jpg)
 
 ### Stakeholder Audience:
 The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
@@ -52,9 +55,14 @@ The analysis explores the relationship between well age and functionality.
 
 Three models were employed: XGBoost, LinearSVC, and RandomForest. XGBoost demonstrated the highest accuracy and precision, making it the chosen model.
 
+![logistic regression]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/logistics_con.jpg
+
+![svm]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/svm_con.jpg
+
 **Evaluation:**
 
 XGBoost emerged as the best-performing model, providing high accuracy and precision values.
+![best model]https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg
 
 **Findings:**
 
