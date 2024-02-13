@@ -23,10 +23,18 @@ Tanzania faces water provision challenges due to issues with existing water poin
 - Utilize classification methods to identify effective strategies for improving well functionality. 
 
 ### Stakeholder Audience:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d633391b210731666daa883682c2e500457ca25
 The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
 
 ### Dataset
 ##### Features:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d633391b210731666daa883682c2e500457ca25
 The features in the dataset include, but may not be limited to:
 
 id: Unique identifier for each water pump.
@@ -46,6 +54,10 @@ region: Geographic location.
 population: Population around the well.
 
 ### Target Variable:
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4d633391b210731666daa883682c2e500457ca25
 status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair.
 
 **Data Understanding:**
@@ -60,7 +72,15 @@ The analysis explores the relationship between well age and functionality.
 
 **Modeling:**
 
-Three models were employed: XGBoost, LinearSVC, and RandomForest. XGBoost demonstrated the highest accuracy and precision, making it the chosen model.
+In our analysis, we employed classification modeling to categorize wells into three groups: functional, non-functional, and functional-need-repairs. Classification modeling helps us predict and understand the status of wells, guiding decision-making for resource allocation and maintenance strategies.
+
+Why Classification Modeling?
+
+Problem Context: Tanzania faces challenges in providing clean water, with a significant portion of the population lacking access. Classification modeling helps identify factors influencing well functionality, aiding targeted interventions.
+
+Predictive Power: By utilizing machine learning algorithms, we predict the status of wells based on features such as water source, well age, and the impact of public meetings. This predictive power informs strategies for improving well functionality.
+
+![svm](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/svm_con.jpg)
 
 ![logistic regression](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/logistics_con.jpg)
 
@@ -68,10 +88,25 @@ Three models were employed: XGBoost, LinearSVC, and RandomForest. XGBoost demons
 
 **Evaluation:**
 
+<<<<<<< HEAD
 XGBoost emerged as the best-performing model, providing high accuracy and precision values.
+=======
+After evaluating various models, our analysis reveals that XGBoost outperformed others, achieving the highest accuracy score at 80%. Notably, it also exhibited strong precision and recall values, 82% and 78% respectively.
+
+Why XGBoost?
+
+Accuracy: Achieved the highest accuracy among all models tested.
+Precision and Recall: Maintained high precision (82%) and recall (78%) values, ensuring a balance between correctly identifying functional and non-functional wells.
+Consideration of Categorical Data:
+
+Success of XGBoost: Given the prevalence of categorical data in our model, XGBoost's efficiency in handling such information contributed to its superior performance.
+
+>>>>>>> 4d633391b210731666daa883682c2e500457ca25
 ![best model](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg)
 
 **Findings:**
+
+Our analysis revealed crucial insights into Tanzania's well functionality:
 
 1. **Dependency on Groundwater:**
    - Groundwater plays a critical role in maintaining well functionality, serving as the primary water source for wells.
@@ -93,22 +128,37 @@ XGBoost emerged as the best-performing model, providing high accuracy and precis
 
 **Conclusion and Recommendations:**
 
-- **Conclusion:**
+**Conclusion:**
+  
+In Conclusion:
+
   - Groundwater is vital for well functionality.
   - Payment methods, especially monthly or bucket-based, contribute to improved well maintenance.
   - Well age is a key factor, with newer wells generally in better condition.
   - Public meetings significantly impact well functionality.
 
-- **Recommendations:**
-  - Explore sustainable methods like rainwater harvesting and soil conservation.
-  - Implement payment systems based on buckets or monthly payments for improved well maintenance.
-  - Consider well age in planning and construction for better functionality.
-  - Encourage and organize public meetings to enhance well functionality.
-  - Establish designated inspections for pumps identified by the model.
+ **Recommendations:**
+  
+  Based on our findings, we propose the following recommendations:
+  
+  - Sustainable Practices: Implement rainwater harvesting and soil conservation to ensure a stable and sustainable water supply.
+  - Structured Payments: Advocate for structured payment systems, such as monthly subscriptions, to enhance well maintenance.
+  - Focus on New Wells: Prioritize the construction of new wells to improve overall well functionality and water access.
+  -Community Engagement: Promote public meetings to involve communities in well maintenance, fostering a sense of ownership.
+
+
   
 **Future Work:**
 
+<<<<<<< HEAD
 - **Data Examination:**
   - Investigate missing or zero values in Population and GPS.
   - Explore binning highly cardinal columns for enhanced model performance.
   - Examine and address wells with static head values of 0.
+=======
+Moving forward, we suggest the following steps:
+
+- Field Inspections: Dispatch designated personnel to inspect wells identified by our model, determining necessary actions.
+- Data Refinement: Examine missing or zero values in population and GPS, and consider binning highly cardinal columns for better analysis.
+- Static Head Evaluation: Investigate wells with static head values of zero, understanding their impact on functionality.
+>>>>>>> 4d633391b210731666daa883682c2e500457ca25
