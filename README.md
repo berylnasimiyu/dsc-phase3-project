@@ -1,7 +1,4 @@
 # Water Wells Classification Project
-
-![Water Well](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg)
-
 Group 15 DSF-PT05
 Members
 1. Sophie Hare-Lead
@@ -10,8 +7,13 @@ Members
 5. John Nkakuyia
 6. Daniel Murithi
 
+![Water Well](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/image201.jpg)
+
 ## Project Overview
-This project aims to address a classification problem related to water wells in Tanzania. The goal is to predict the condition of water wells, categorizing them as functional, non-functional, or in need of repair. The analysis and models developed in this project will assist stakeholders, such as NGOs or the Government of Tanzania, in identifying wells that require attention and maintenance.
+Tanzania is the largest country in East Africa with a population of approximately 59 million. However, the country faces challenges in providing clean water to its large population and about 47% of the population lacks access to clean drinking water. Many existing water points need repairs or have failed. The purpose of the project is to build a classifier for two potential audiences;
+ -The Government of Tanzania might be interested in identifying patterns in non-functional wells and understanding  factors influencing their failure. This knowledge can be used to improve how new wells are built to ensure their longevity and functionality.
+ -Identifying non-functional and in-need-of-repair wells to optimize resource allocation and maximize their impact in providing clean water access.
+
 
 **Objective:**
 
@@ -20,36 +22,41 @@ Tanzania faces water provision challenges due to issues with existing water poin
 - Determine the best payment mode for well-maintenance.
 - Utilize classification methods to identify effective strategies for improving well functionality. 
 
-This analysis supports the Government Ministry of Water and NGOs in their efforts to ensure clean water access for Tanzanian communities.
-
-**Data Understanding:**
-
-Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
-
-![Age vs functionality](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/age_wel.jpg)
-
 ### Stakeholder Audience:
 The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
 
+### Dataset
 ##### Features:
 The features in the dataset include, but may not be limited to:
 
 id: Unique identifier for each water pump.
+
 amount_tsh: Total static head (amount of water available to waterpoint).
+
 funder: Organization or individual that funded the well.
+
 installer: Organization or person that installed the well.
+
 longitude, latitude: Geographic coordinates of the well.
+
 basin: Geographic water basin.
+
 region: Geographic location.
+
 population: Population around the well.
 
 ### Target Variable:
 status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair.
 
+**Data Understanding:**
+
+Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
 
 **Age vs Functionality:**
 
 The analysis explores the relationship between well age and functionality.
+
+![Age vs functionality](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/age_wel.jpg)
 
 **Modeling:**
 
