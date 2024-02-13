@@ -110,6 +110,7 @@ Our analysis revealed crucial insights into Tanzania's well functionality:
    - XGBoost emerged as the best-performing model, showcasing high accuracy and precision in predicting well functionality.
 
 **Conclusion and Recommendations:**
+
 **Conclusion:**
   
 In Conclusion:
