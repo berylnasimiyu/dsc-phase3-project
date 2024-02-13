@@ -20,7 +20,11 @@ Tanzania faces water provision challenges due to issues with existing water poin
 
 This analysis supports the Government Ministry of Water and NGOs in their efforts to ensure clean water access for Tanzanian communities.
 
-## Business and Data Understanding
+**Data Understanding:**
+
+Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
+!images/age_wel.jpg
+
 ### Stakeholder Audience:
 The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
 
@@ -37,11 +41,7 @@ region: Geographic location.
 population: Population around the well.
 
 ### Target Variable:
-status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair."
-
-**Data Understanding:**
-
-Data was obtained from the Taarifa waterpoints dashboard which aggregates data from the Tanzania Ministry of Water. The data collected contains features related to water pumps such as geographic location, water quality, organizations that build and manage them, and population among others. The target feature is a 'status group with three possible values functional, non-functional, and functional-need-repairs.
+status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair.
 
 
 **Age vs Functionality:**
