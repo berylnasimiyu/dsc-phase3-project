@@ -110,8 +110,7 @@ Our analysis revealed crucial insights into Tanzania's well functionality:
    - XGBoost emerged as the best-performing model, showcasing high accuracy and precision in predicting well functionality.
 
 **Conclusion and Recommendations:**
-
-- **Conclusion:**
+**Conclusion:**
   
 In Conclusion:
 
@@ -120,8 +119,8 @@ In Conclusion:
   - Well age is a key factor, with newer wells generally in better condition.
   - Public meetings significantly impact well functionality.
 
-- **Recommendations:**
-- 
+ **Recommendations:**
+  
   Based on our findings, we propose the following recommendations:
   
   - Sustainable Practices: Implement rainwater harvesting and soil conservation to ensure a stable and sustainable water supply.
