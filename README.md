@@ -81,6 +81,7 @@ Precision and Recall: Maintained high precision (82%) and recall (78%) values, e
 Consideration of Categorical Data:
 
 Success of XGBoost: Given the prevalence of categorical data in our model, XGBoost's efficiency in handling such information contributed to its superior performance.
+
 ![best model](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg)
 
 **Findings:**
