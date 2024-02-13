@@ -23,10 +23,12 @@ Tanzania faces water provision challenges due to issues with existing water poin
 - Utilize classification methods to identify effective strategies for improving well functionality. 
 
 ### Stakeholder Audience:
+
 The primary stakeholders for this project are organizations involved in providing clean water access, including NGOs and the Government of Tanzania. The model's predictions will help prioritize well-maintenance efforts and allocate resources effectively.
 
 ### Dataset
 ##### Features:
+
 The features in the dataset include, but may not be limited to:
 
 id: Unique identifier for each water pump.
@@ -46,6 +48,7 @@ region: Geographic location.
 population: Population around the well.
 
 ### Target Variable:
+
 status_group: The functionality status of the water pump (target variable). Categories may include "functional," "non-functional," or "functional needs repair.
 
 **Data Understanding:**
@@ -85,6 +88,7 @@ Success of XGBoost: Given the prevalence of categorical data in our model, XGBoo
 ![best model](https://github.com/berylnasimiyu/dsc-phase3-project/blob/main/images/model_output.jpg)
 
 **Findings:**
+
 Our analysis revealed crucial insights into Tanzania's well functionality:
 
 1. **Dependency on Groundwater:**
@@ -108,6 +112,7 @@ Our analysis revealed crucial insights into Tanzania's well functionality:
 **Conclusion and Recommendations:**
 
 - **Conclusion:**
+  
 In Conclusion:
 
   - Groundwater is vital for well functionality.
@@ -116,6 +121,7 @@ In Conclusion:
   - Public meetings significantly impact well functionality.
 
 - **Recommendations:**
+- 
   Based on our findings, we propose the following recommendations:
   
   - Sustainable Practices: Implement rainwater harvesting and soil conservation to ensure a stable and sustainable water supply.
@@ -126,6 +132,7 @@ In Conclusion:
 
   
 **Future Work:**
+
 Moving forward, we suggest the following steps:
 
 - Field Inspections: Dispatch designated personnel to inspect wells identified by our model, determining necessary actions.
